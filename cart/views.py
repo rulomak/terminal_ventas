@@ -29,6 +29,6 @@ def subtract(request, product_id):
 def clear(request):
     cart = Cart(request)
     cart.clear()
-    return redirect("category", 1)
+    return redirect("index")
 
     
