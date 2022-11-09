@@ -35,6 +35,12 @@
                       
             </div>
             <div class="col-4">
+                {% if 'ok' in request.GET %}
+                <div class="alert alert-success" role="alert">
+                    <h4 class="alert-heading">Pedido Cofirmado</h4>
+                    <p>Tiempo promedio de demora 45min</p>
+                </div>
+                {% endif %}
                 {% include "cart.html" %}
             </div>
         </div>

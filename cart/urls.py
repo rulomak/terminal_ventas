@@ -6,5 +6,6 @@ urlpatterns = [
     path('delete/<int:product_id>/', views.delete, name="detele"),
     path('subtract/<int:product_id>/', views.subtract, name="subtract"),
     path('clear/', views.clear, name="clear"),
+    path('confirm/', views.confirm, name="confirm")
           
 ]
